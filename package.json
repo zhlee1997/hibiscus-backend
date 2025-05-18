@@ -1,0 +1,38 @@
+{
+  "name": "hibiscus-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx --watch --env-file .env.development src/index.ts",
+    "dev:staging": "tsx --watch --env-file .env.staging src/index.ts",
+    "dev:prod": "tsx --watch --env-file .env.production src/index.ts",
+    "start": "node --env-file .env dist/index.js",
+    "build": "tsc",
+    "type-check": "tsc --noEmit",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.6.2",
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.27.0",
+    "@tsconfig/node22": "^22.0.1",
+    "@types/express": "^5.0.2",
+    "@types/node": "^22.15.18",
+    "eslint": "^9.27.0",
+    "eslint-plugin-perfectionist": "^4.13.0",
+    "prettier": "^3.5.3",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.32.1"
+  }
+}
